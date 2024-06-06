@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet" />
+
+    <link rel="stylesheet" href="fonts/icomoon/style.css" />
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <!-- Style -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet" />
+    <!-- bawaan roboto -->
+
+    <style>
+      body {
+        background-color: #f1e4c3;
+      }
+
+      /* CSS */
+      .button-52 {
+        font-size: 16px;
+        font-weight: 200;
+        letter-spacing: 1px;
+        padding: 13px 20px 13px;
+        outline: 0;
+        border: 1px solid #aa8b56;
+        /* z-index: 2; */
+        cursor: pointer;
+        color: white;
+        position: relative;
+        background-color: rgba(255, 255, 255, 0);
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+      }
+
+      .button-52:after {
+        content: '';
+        background-color: #4e6c50;
+        width: 100%;
+        z-index: -1;
+        position: absolute;
+        height: 100%;
+        top: 7px;
+        left: 7px;
+        transition: 0.2s;
+      }
+
+      .button-52:hover:after {
+        top: 0px;
+        left: 0px;
+      }
+
+      @media (min-width: 768px) {
+        .button-52 {
+          padding: 13px 50px 13px;
+        }
+      }
+
+      .home1 {
+        position: relative;
+        height: 100vh; /* Set the height of the main container to the full viewport height */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .background {
+        filter: brightness(60%);
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Ensure the image covers the entire container */
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1; /* Move the background image to the back */
+      }
+
+      .contain {
+        text-align: center;
+        color: white; /* Text color for better visibility */
+      }
+
+      .logo {
+        margin-top: -70px;
+        mix-blend-mode: color-burn;
+        filter: brightness(170%);
+        width: 60%; /* Adjust the logo width as needed */
+        height: auto;
+      }
+
+      .welcome-text {
+        margin-top: -100px; /* Adjust the margin between logo and welcome text */
+      }
+
+      .home2 {
+        padding-top: 50px;
+      }
+
+      .image-list {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap; /* Agar item gambar wrap ke baris baru ketika layar lebih kecil */
+      }
+
+      .image-item {
+        text-align: center;
+        margin: 20px; /* Jarak antara item gambar */
+        flex: 1 1 100px; /* Ukuran item gambar pada layar besar */
+      }
+
+      .image-item p {
+        color: black;
+        margin-bottom: 15px; /* Mengurangi jarak antara teks dan gambar */
+      }
+
+      .image-list img {
+        width: 25%; /* Gambar akan mengisi lebar container */
+        max-width: 40%;
+        height: auto; /* Menjaga aspek rasio gambar */
+      }
+
+      .home3 {
+        z-index: 0;
+        height: 560px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .contain1 {
+        text-align: center; /* Memposisikan teks di tengah-tengah gambar */
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        display: flex;
+      }
+
+      .contain2 {
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+      }
+
+      /* top right bottom left */
+      .textstyle {
+        padding-top: 10px; /* Sesuaikan padding sesuai kebutuhan */
+        background-color: #c6a969;
+        width: 70%;
+        transition: transform 0.3s ease-in-out;
+        cursor: pointer;
+      }
+
+      .textstyle:hover {
+        transform: translateY(-5px);
+      }
+
+      .footer-btn {
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .footer-btn:hover {
+        transform: translateY(-5px);
+      }
+
+      .contain1 img {
+        width: 69%; /* Sesuaikan lebar gambar sesuai kebutuhan */
+        margin: 0 0 20px 0; /* Sesuaikan margin sesuai kebutuhan */
+        height: auto;
+      }
+
+      .home4 {
+        background-image: url('images/header3.jpg');
+        background-attachment: fixed;
+        background-size: cover;
+      }
+
+      .team-container {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 50px 100px;
+        /* flex: 1 1 200px; */
+        justify-content: space-between;
+      }
+
+      .team-card {
+        display: flex;
+        position: relative; /* Tambahkan position relative */
+        background-color: #597e52;
+        width: 48%;
+        border-radius: 8px;
+        margin-bottom: 30px;
+        overflow: hidden;
+        box-shadow: 15px 15px 3px rgba(0, 0, 0, 0.1);
+      }
+
+      .team-image {
+        width: 35%;
+        height: auto;
+        object-fit: cover;
+        filter: grayscale(100%);
+        transition: filter 0.3s;
+      }
+
+      .team-info {
+        position: static;
+        left: 0;
+        width: 100%;
+        padding: 15px;
+        color: white;
+      }
+
+      .team-card:hover .team-image {
+        filter: grayscale(0%);
+      }
+
+      .team-card:hover .team-info {
+        opacity: 1; /* Tampilkan konten saat hover */
+      }
+
+      .team-name {
+        font-size: 1.2em;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      .team-bio {
+        font-size: 0.9em;
+      }
+
+      .floating-btn {
+        cursor: pointer;
+        padding: 3px 0;
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .floating-btn:hover {
+        transform: translateY(-5px);
+      }
+
+      /* Style untuk formulir kontak */
+      #nama,
+      #email,
+      #pesan {
+        margin-top: 10px;
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      textarea {
+        resize: vertical; /* Biarkan textarea dapat diresize secara vertikal */
+      }
+
+      input[type='submit'] {
+        width: 140px; /* Tombol submit mengikuti lebar kontennya */
+        padding: 10px 20px; /* Padding untuk tombol submit */
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      input[type='submit']:hover {
+        background-color: #45a049;
+      }
+
+      .maps {
+        padding-left: 100px;
+      }
+      @media only screen and (max-width: 414px) and (max-height: 736px) {
+        /* Gaya khusus untuk layar 768px dan lebih besar */
+        .welcome-text {
+          margin-top: -90px; /* Adjust the margin between logo and welcome text */
+        }
+        h1 {
+          font-size: 1.9rem; /* Ukuran teks untuk layar kecil */
+        }
+
+        h6 {
+          font-size: 0.7rem; /* Ukuran teks untuk layar kecil */
+        }
+
+        h2 {
+          font-size: 1.5rem; /* Ukuran teks untuk layar kecil */
+        }
+
+        h3 {
+          font-size: 0.9rem; /* Ukuran teks untuk layar kecil */
+        }
+
+        p {
+          font-size: 0.7rem;
+        }
+
+        .logo {
+          padding-bottom: 55px;
+          margin-top: -100px;
+          width: 70%;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .home3.container-fluid {
+          padding-top: 50px;
+          padding-bottom: 50px;
+          display: flex;
+          height: auto;
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .contain2,
+        .contain1 {
+          width: 100%;
+          text-align: center;
+          margin-bottom: 20px; /* Atur margin sesuai kebutuhan Anda */
+        }
+
+        .contain1 img {
+          margin-top: 30px;
+          width: 300px; /* Atur lebar gambar sesuai kebutuhan Anda */
+          height: auto;
+          margin-bottom: 20px; /* Atur margin sesuai kebutuhan Anda */
+        }
+
+        .textstyle {
+          width: 300px;
+        }
+
+        .team-container {
+          display: flex;
+          flex-wrap: wrap;
+          padding: 50px 0px; /* Kurangi padding agar responsif */
+        }
+
+        .team-card {
+          display: flex;
+          position: relative;
+          background-color: #597e52;
+          width: 100%; /* Atur lebar menjadi 100% agar menyesuaikan kontainer */
+          border-radius: 8px;
+          margin-bottom: 20px; /* Kurangi margin agar lebih rapat */
+          overflow: hidden;
+          box-shadow: 15px 15px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        .team-image {
+          width: 35%;
+          height: auto;
+          object-fit: cover;
+          filter: grayscale(100%);
+          transition: filter 0.3s;
+        }
+
+        .team-info {
+          position: static;
+          left: 0;
+          width: 65%; /* Ubah width agar sesuai dengan perubahan pada .team-card */
+          padding: 15px;
+          color: white;
+        }
+
+        .team-card:hover .team-image {
+          filter: grayscale(0%);
+        }
+
+        .team-card:hover .team-info {
+          opacity: 1;
+        }
+
+        .team-name {
+          font-size: 1.2em;
+          font-weight: bold;
+          margin-bottom: 10px;
+        }
+
+        .team-bio {
+          font-size: 0.9em;
+        }
+
+        .floating-btn {
+          cursor: pointer;
+          padding: 3px 0;
+          transition: transform 0.3s ease-in-out;
+        }
+
+        .floating-btn:hover {
+          transform: translateY(-5px);
+        }
+
+        .row.contact-us {
+          flex-direction: column; /* Tata letak menjadi vertikal */
+          align-items: center; /* Pusatkan elemen secara horizontal */
+          justify-content: center;
+        }
+
+        .map-container {
+          width: 100%; /* Lebar peta 100% saat vertikal */
+        }
+
+        #nama,
+        #email,
+        #pesan {
+          width: 200px;
+        }
+
+        #FAQ {
+          height: auto !important;
+          padding-top: 20px !important;
+          padding-bottom: 20px !important;
+        }
+
+        .contact-us {
+          flex-direction: column !important;
+          align-items: center !important;
+        }
+
+        .col-8,
+        .col-5 {
+          width: 100% !important;
+          padding: 0 15px !important;
+        }
+
+        .map-container {
+          margin-bottom: 20px;
+        }
+
+        .text-container {
+          text-align: center;
+        }
+
+        .text-container form {
+          max-width: 100% !important;
+          width: 100% !important;
+        }
+
+        iframe {
+          width: 100% !important;
+          height: 200px !important; /* Adjust the height as per your requirement */
+        }
+
+        .home4 {
+          background-position: center;
+        }
+      }
+    </style>
+
+    <title>Website Menu #1</title>
+  </head>
+  <body>
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+
+    <header class="site-navbar js-sticky-header site-navbar-target" role="banner">
+      <div class="container">
+        <div class="row align-items-center header-container">
+          <div class="col-6 col-xl-2">
+            <h1 class="mb-0 site-logo"><a href="index.html" style="font-family: 'Lora', serif">Lembang Agri </a></h1>
+          </div>
+
+          <div class="col-12 col-md-10 d-none d-xl-block">
+            <nav class="site-navigation position-relative text-right" role="navigation">
+              <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
+                <li><a href="#Homesite" class="nav-link">Home</a></li>
+                <li class="has-children">
+                  <a href="#about-section" class="nav-link">About Us</a>
+                  <ul class="dropdown">
+                    <li><a href="#OurTeam" class="nav-link">Team</a></li>
+                    <li><a href="#pricing-section" class="nav-link">Pricing</a></li>
+                    <li><a href="#FAQ" class="nav-link">FAQ</a></li>
+                    <li><a href="#gallery-section" class="nav-link">Gallery</a></li>
+                    <li><a href="#services-section" class="nav-link">Services</a></li>
+                    <li><a href="#testimonials-section" class="nav-link">Testimonials</a></li>
+                    <li class="has-children">
+                      <a href="#">More Links</a>
+                      <ul class="dropdown">
+                        <li><a href="#">Menu One</a></li>
+                        <li><a href="#">Menu Two</a></li>
+                        <li><a href="#">Menu Three</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+
+                <li><a href="#blog-section" class="nav-link">Blog</a></li>
+                <li><a href="#contact-section" class="nav-link">Contact</a></li>
+                <li class="social">
+                  <a href="#contact-section" class="nav-link"><span class="icon-facebook"></span></a>
+                </li>
+                <li class="social">
+                  <a href="#contact-section" class="nav-link"><span class="icon-twitter"></span></a>
+                </li>
+                <li class="social">
+                  <a href="#contact-section" class="nav-link"><span class="icon-linkedin"></span></a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="col-6 d-inline-block d-xl-none ml-md-0 py-3" style="position: relative; top: 3px">
+            <a href="#" class="site-menu-toggle js-menu-toggle float-right"><span class="icon-menu h3"></span></a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- konten website -->
+    <main>
+      <section class="home1 container-fluid" id="Homesite">
+        <!-- Background image -->
+        <img id="backgroundImage" class="img-fluid background" src="images/header1.jpg" alt="background" />
+
+        <div class="contain">
+          <img src="images/logo.jpg" alt="Logo" class="logo" />
+          <!-- Teks Welcome dan Tombol di sebelah kanan -->
+          <div class="welcome-text text-light">
+            <h1 style="font-family: 'Lora', serif">Packing House Lembang Agri</h1>
+            <h6>
+              Solusi bagi Petani dan Kamu, <br />
+              yuk tingkatkan konsumsi sayuranmu biar kita sama-sama sehat.
+            </h6>
+            <a href="dashbord.html"><button class="button-52 mt-4">DATA SENSOR</button></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="home2 container-fluid" style="background-color: white">
+        <div class="text-center">
+          <h1 style="font-family: 'Lora', serif">Welcome to our farm</h1>
+          <h3 style="font-family: 'Dancing Script', cursive">-- Our product --</h3>
+        </div>
+
+        <div class="image-list">
+          <div class="image-item">
+            <img src="icons/icon1.png" alt="" class="img-fluid" />
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+          <div class="image-item">
+            <img src="icons/icon2.png" alt="" class="img-fluid" />
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+          <div class="image-item">
+            <img src="icons/icon3.png" alt="" class="img-fluid" />
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+          <div class="image-item">
+            <img src="icons/icon4.png" alt="" class="img-fluid" />
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="us">
+        <div class="home3 container-fluid">
+          <div class="contain2 row">
+            <h1 style="font-family: 'Lora', serif">
+              We provide high-quality <br />
+              organic products
+            </h1>
+            <h3 style="font-family: 'Dancing Script', cursive">-- Our company --</h3>
+            <p class="text-dark text-center col-8">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente vel officia quisquam. Voluptatum dolorum delectus mollitia, perferendis odio totam blanditiis eius, tempora quasi quisquam ut corporis officia molestiae
+              provident incidunt.
+            </p>
+            <p class="text-dark text-center col-8">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum enim excepturi cumque earum voluptates eos explicabo ad quae beatae quisquam, quam id similique labore ducimus recusandae eligendi perferendis! Ea, vitae.
+            </p>
+            <!-- Tambahkan tombol di bawah teks -->
+            <button class="button-52 mt-4" onclick="alert('Tombol telah diklik!')">MORE ABOUT US</button>
+          </div>
+
+          <div class="contain1 col-6">
+            <img src="images/header2.jpg" alt="" />
+            <div class="textstyle">
+              <h2 style="font-family: 'Lora', serif">We grow with high quality</h2>
+              <h3 style="font-family: 'Dancing Script', cursive">-- See our products --</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TEAM -->
+      <section class="home4 container-fluid" id="OurTeam">
+        <div class="text-light">
+          <h5 class="text-center" style="padding-top: 100px">OUR TEAM</h5>
+          <h1 class="text-center" style="font-family: 'Dancing Script', cursive">Meet the Team</h1>
+        </div>
+        <div class="team-container">
+          <!-- Team 1 -->
+          <div class="team-card">
+            <img src="images/team1.jpg" alt="Team 1" class="team-image" />
+            <div class="team-info">
+              <div class="team-name">Muhammmad Rangga</div>
+              <div class="team-bio">
+                <strong>Software Developer</strong><br />
+                <br />
+                Seorang yang ahli di bidang A. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </div>
+              <div class="icon-container mt-4">
+                <!-- facebook -->
+                <div class="floating-btn">
+                  <a href="#"
+                    ><svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512">
+                      <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                      <path
+                        fill="#ffffff"
+                        d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+                <!-- instagram -->
+                <div class="floating-btn">
+                  <a href="https://www.instagram.com/mhmdanggarzl/">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512">
+                      <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                      <path
+                        fill="#ffffff"
+                        d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+
+                <!-- linked in  -->
+                <div class="floating-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512">
+                    <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path
+                      fill="#ffffff"
+                      d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Team 2 -->
+          <div class="team-card">
+            <img src="images/team2.jpg" alt="Team 2" class="team-image" />
+            <div class="team-info">
+              <div class="team-name">Sarah Johnson</div>
+              <div class="team-bio">
+                <strong>Information Security Specialist</strong><br />
+                <br />
+                Seorang yang ahli di bidang B. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </div>
+              <div class="icon-container mt-4">
+                <!-- facebook -->
+                <div class="floating-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512">
+                    <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path
+                      fill="#ffffff"
+                      d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"
+                    />
+                  </svg>
+                </div>
+                <!-- instagram -->
+                <div class="floating-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512">
+                    <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path
+                      fill="#ffffff"
+                      d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                    />
+                  </svg>
+                </div>
+
+                <!-- linked in  -->
+                <div class="floating-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512">
+                    <path
+                      fill="#ffffff"
+                      d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Team 3 -->
+          <div class="team-card">
+            <img src="images/team3.jpg" alt="Team 3" class="team-image" />
+            <div class="team-info">
+              <div class="team-name">Michael Carter</div>
+              <div class="team-bio">
+                <strong>Network Administrator</strong><br />
+                <br />
+                Seorang yang ahli di bidang C. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </div>
+              <div class="icon-container mt-4">
+                <!-- facebook -->
+                <div class="floating-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512">
+                    <path
+                      fill="#ffffff"
+                      d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"
+                    />
+                  </svg>
+                </div>
+                <!-- instagram -->
+                <div class="floating-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512">
+                    <path
+                      fill="#ffffff"
+                      d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                    />
+                  </svg>
+                </div>
+
+                <!-- linked in  -->
+                <div class="floating-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512">
+                    <path
+                      fill="#ffffff"
+                      d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Team 4 -->
+          <div class="team-card">
+            <img src="images/team4.jpg" alt="Team 4" class="team-image" />
+            <div class="team-info">
+              <div class="team-name">Emily Thompson</div>
+              <div class="team-bio">
+                <strong>Data Analyst</strong><br />
+                <br />
+                Seorang yang ahli di bidang D. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </div>
+              <div class="icon-container mt-4">
+                <!-- facebook -->
+                <div class="floating-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512">
+                    <path
+                      fill="#ffffff"
+                      d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"
+                    />
+                  </svg>
+                </div>
+                <!-- instagram -->
+                <div class="floating-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512">
+                    <path
+                      fill="#ffffff"
+                      d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                    />
+                  </svg>
+                </div>
+
+                <!-- linked in  -->
+                <div class="floating-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512">
+                    <path
+                      fill="#ffffff"
+                      d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Team 5 -->
+          <div class="team-card">
+            <img src="images/team5.jpg" alt="Team 5" class="team-image" />
+            <div class="team-info">
+              <div class="team-name">Daniel Miller</div>
+              <div class="team-bio">
+                <strong>Cloud Computing</strong><br />
+                <br />
+                Seorang yang ahli di bidang E. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </div>
+              <div class="icon-container mt-4">
+                <!-- facebook -->
+                <div class="floating-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512">
+                    <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path
+                      fill="#ffffff"
+                      d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"
+                    />
+                  </svg>
+                </div>
+                <!-- instagram -->
+                <div class="floating-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512">
+                    <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path
+                      fill="#ffffff"
+                      d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                    />
+                  </svg>
+                </div>
+
+                <!-- linked in  -->
+                <div class="floating-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512">
+                    <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path
+                      fill="#ffffff"
+                      d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Team 6 -->
+          <div class="team-card">
+            <img src="images/team6.jpg" alt="Team 6" class="team-image" />
+            <div class="team-info">
+              <div class="team-name">Jessica White</div>
+              <div class="team-bio">
+                <strong>Network Engineer</strong><br />
+                <br />
+                Seorang yang ahli di bidang F. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </div>
+              <div class="icon-container mt-4">
+                <!-- facebook -->
+                <div class="floating-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512">
+                    <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path
+                      fill="#ffffff"
+                      d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"
+                    />
+                  </svg>
+                </div>
+                <!-- instagram -->
+                <div class="floating-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512">
+                    <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path
+                      fill="#ffffff"
+                      d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                    />
+                  </svg>
+                </div>
+
+                <!-- linked in  -->
+                <div class="floating-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512">
+                    <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path
+                      fill="#ffffff"
+                      d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="FAQ" class="container-fluid" style="height: 634px">
+        <div class="row contact-us" style="padding-top: 70px; padding-bottom: 70px">
+          <div class="col-8 maps">
+            <!-- Bagian peta -->
+            <div class="map-container">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.663469183077!2d107.6548832793457!3d-6.810726000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e08578becd01%3A0x40ebbe1d6efc3479!2sPacking%20House%20Lembang%20Agri!5e0!3m2!1sen!2sid!4v1705363350957!5m2!1sen!2sid"
+                width="90%"
+                height="450px"
+                style="border-radius: 10px"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+          <div class="col-4">
+            <!-- Bagian teks -->
+            <div class="text-container d-flex flex-column align-items-center justify-content-center" style="height: auto">
+              <div class="text-center">
+                <h1 style="font-family: 'Dancing Script', cursive">Kunjungi Kami</h1>
+                <h5 style="font-family: 'Lora', serif">Contact us</h5>
+                <!-- Input Form -->
+                <form id="contactForm">
+                  <input type="text" id="nama" name="nama" placeholder="Nama" required /><br /><br />
+                  <input type="email" id="email" name="email" placeholder="Email" required /><br /><br />
+                  <textarea id="pesan" name="pesan" rows="4" placeholder="Pesan" required></textarea><br /><br />
+                  <input type="submit" id="showPopup" value="Kirim" />
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="text-white text-lg-start" style="background-color: #597e52; font-family: 'Dancing Script', cursive">
+      <!-- Grid container -->
+      <div class="container p-4">
+        <!-- Grid row -->
+        <div class="row mt-4">
+          <!-- Grid column -->
+          <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-4" style="font-family: 'Lora', serif">About Company</h5>
+
+            <p class="text-white">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti.</p>
+
+            <p class="text-white">Blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias.</p>
+
+            <div class="mt-4">
+              <!-- Social media icons -->
+              <a href="#" class="btn rounded-circle btn-floating btn-warning footer-btn">
+                <i class="bi bi-facebook"></i>
+              </a>
+              <a href="#" class="btn rounded-circle btn-floating btn-warning footer-btn">
+                <i class="bi bi-twitter"></i>
+              </a>
+              <a href="#" class="btn rounded-circle btn-floating btn-warning footer-btn">
+                <i class="bi bi-instagram"></i>
+              </a>
+              <a href="#" class="btn rounded-circle btn-floating btn-warning footer-btn">
+                <i class="bi bi-telegram"></i>
+              </a>
+              <!-- Add more social media icons as needed -->
+            </div>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-4 pb-1" style="font-family: 'Lora', serif">Search Something</h5>
+
+            <div class="form-outline form-white mb-4">
+              <input type="text" id="formControlLg" placeholder="search" class="form-control form-control-lg" />
+              <label class="form-label" for="formControlLg" style="font-family: 'Lora', serif">Search</label>
+            </div>
+
+            <ul class="list-unstyled" style="margin-left: 1.65em">
+              <li class="mb-3">
+                <i class="bi bi-house-fill"></i>
+                <span class="ms-2">New York, NY 10012, US</span>
+              </li>
+              <li class="mb-3">
+                <i class="bi bi-envelope-fill"></i>
+                <span class="ms-2">info@example.com</span>
+              </li>
+              <li class="mb-3">
+                <i class="bi bi-telephone-fill"></i>
+                <span class="ms-2">+01 234 567 88</span>
+              </li>
+              <li class="mb-3">
+                <i class="bi bi-printer-fill"></i>
+                <span class="ms-2">+01 234 567 89</span>
+              </li>
+            </ul>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-4" style="font-family: 'Lora', serif">Opening Hours</h5>
+
+            <table class="table text-center text-white">
+              <tbody class="font-weight-normal">
+                <tr>
+                  <td>Mon - Thu:</td>
+                  <td>8am - 9pm</td>
+                </tr>
+                <tr>
+                  <td>Fri - Sat:</td>
+                  <td>8am - 1am</td>
+                </tr>
+                <tr>
+                  <td>Sunday:</td>
+                  <td>9am - 10pm</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">© 2024 Pertanian Website. All rights reserved.</div>
+      <!-- Copyright -->
+    </footer>
+
+    <!-- Letakkan script ini di bagian bawah sebelum tag penutup </body> -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        // Daftar URL gambar latar belakang yang akan digunakan
+        const backgroundImages = [
+          'images/header1.jpg',
+          'images/header2.jpg', // Ganti dengan URL gambar lainnya jika diperlukan
+          'images/header4.jpg',
+        ];
+
+        // Inisialisasi index saat ini
+        let currentIndex = 0;
+
+        // Fungsi untuk mengganti gambar latar belakang
+        function changeBackgroundImage() {
+          // Ganti URL gambar latar belakang
+          document.getElementById('backgroundImage').src = backgroundImages[currentIndex];
+
+          // Increment index atau kembali ke 0 jika mencapai akhir daftar
+          currentIndex = (currentIndex + 1) % backgroundImages.length;
+        }
+
+        // Panggil fungsi changeBackgroundImage setiap beberapa detik (contoh: 5000 milidetik atau 5 detik)
+        setInterval(changeBackgroundImage, 2000);
+      });
+    </script>
+
+    <script src="js/sand.js"></script>
+    <script src="js/web.js"></script>
+
+    
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
